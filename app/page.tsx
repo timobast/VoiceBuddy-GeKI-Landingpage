@@ -172,7 +172,7 @@ const faqs = [
   },
   {
     q: "Wie schnell sehen wir erste Erfolge?",
-    a: "Bereits nach 4-6 Wochen können erste KI-Module produktiv laufen. Wir starten mit einem Pilot-Usecase (z.B. Abfallberatung, FAQ-Assistent oder Telefon-Vorqualifizierung), messen die Entlastung und erweitern dann schrittweise. So minimieren Sie Risiken und maximieren den Nutzen.",
+    a: "Bereits nach 2-4 Wochen können erste KI-Module produktiv laufen. Wir starten mit einem Pilot-Usecase (z.B. Abfallberatung, FAQ-Assistent oder Telefon-Vorqualifizierung), messen die Entlastung und erweitern dann schrittweise. So minimieren Sie Risiken und maximieren den Nutzen.",
   },
   {
     q: "Brauchen unsere Mitarbeitenden spezielle IT-Kenntnisse?",
