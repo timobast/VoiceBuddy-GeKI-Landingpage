@@ -18,13 +18,13 @@ export default function RootLayout({
       <body className="antialiased">
         <div className="min-h-screen bg-gray-50">
           <header className="bg-white border-b border-gray-200">
-            <div className="container-custom py-1.5">
+            <div className="container-custom py-2">
               <a
                 href="https://www.ai-buddy.net"
                 className="flex items-center gap-3"
                 rel="noopener noreferrer"
               >
-                <div className="relative h-12 sm:h-14 md:h-16 w-auto overflow-hidden">
+                <div className="relative h-14 sm:h-16 md:h-18 w-auto overflow-hidden">
                   <Image
                     src={aiBuddyLogo}
                     alt="AI-Buddy"
@@ -35,7 +35,7 @@ export default function RootLayout({
                     style={{ 
                       objectFit: 'cover',
                       objectPosition: '50% 50%',
-                      transform: 'scale(1.4)',
+                      transform: 'scale(1.3)',
                     }}
                   />
                 </div>
