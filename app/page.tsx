@@ -141,7 +141,7 @@ function Pill({ children }: { children: React.ReactNode }) {
 
 export default function Page() {
   return (
-    <div className="py-12">
+    <div className="pt-4 pb-12">
       <div className="container-custom">
         {/* Hero */}
         <section className="relative overflow-hidden rounded-2xl border border-gray-200 bg-gradient-to-br from-primary-50 via-white to-secondary-50 p-8 mb-12">
