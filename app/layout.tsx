@@ -83,9 +83,8 @@ export default function RootLayout({
                 </div>
               </div>
 
-              <div className="mt-8 pt-8 border-t border-gray-800 text-sm text-gray-400 flex flex-col md:flex-row justify-between items-center gap-3">
+              <div className="mt-8 pt-8 border-t border-gray-800 text-sm text-gray-400 text-center">
                 <div>© {new Date().getFullYear()} DC Cloud Services GmbH. Alle Rechte vorbehalten.</div>
-                <div className="text-gray-500">Landingpage: GeKI.ai-buddy.net</div>
               </div>
             </div>
           </footer>
