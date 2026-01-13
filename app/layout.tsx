@@ -18,7 +18,7 @@ export default function RootLayout({
       <body className="antialiased">
         <div className="min-h-screen bg-gray-50">
           <header className="bg-white border-b border-gray-200">
-            <div className="container-custom py-0.5 flex items-center justify-between">
+            <div className="container-custom py-0.5">
               <a
                 href="https://www.ai-buddy.net"
                 className="flex items-center gap-3 overflow-hidden"
@@ -37,13 +37,6 @@ export default function RootLayout({
                     }}
                   />
                 </div>
-              </a>
-              <a
-                href="https://www.ai-buddy.net"
-                className="text-sm font-semibold text-primary-700 hover:text-primary-800"
-                rel="noopener noreferrer"
-              >
-                Zur Website
               </a>
             </div>
           </header>
