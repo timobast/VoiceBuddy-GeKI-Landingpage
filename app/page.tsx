@@ -162,8 +162,13 @@ export default function Page() {
                 <Pill>Private KI</Pill>
                 <Pill>DSGVO & nDSG</Pill>
               </div>
-              <div className="text-sm font-semibold text-primary-800 mb-2">
-                Die GeKI‑Landingpage: Chat‑ & VOICE‑KI für Kommunen im DACH‑Raum.
+              <div className="mb-2">
+                <div className="text-sm font-semibold text-primary-900">
+                  GeKI - Ihr kommunaler KI-Assistent.
+                </div>
+                <div className="text-xs font-semibold tracking-wide uppercase text-primary-700">
+                  powered by AI-BUDDY
+                </div>
               </div>
               <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
                 Bürgeranliegen schneller lösen – ohne zusätzliche Parallelstrukturen
