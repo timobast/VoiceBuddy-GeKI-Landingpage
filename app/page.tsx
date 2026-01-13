@@ -466,8 +466,19 @@ export default function Page() {
 
             <div className="my-6 h-px bg-gray-200" />
 
-            {/* Core */}
-            <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 items-stretch">
+            {/* GeKI Backend (full width) */}
+            <div className="rounded-2xl border border-primary-200 bg-primary-50 p-5">
+              <div className="flex items-center gap-2 mb-2">
+                <Sparkles className="h-5 w-5 text-primary-800" />
+                <div className="font-semibold text-gray-900">GeKI KI‑Backend</div>
+              </div>
+              <div className="text-sm text-gray-700">
+                Orchestriert Chat & VOICE‑KI, Kontext, Berechtigungen, Qualität und Übergaben – zentral steuerbar.
+              </div>
+            </div>
+
+            {/* Tiles (4) */}
+            <div className="mt-4 grid grid-cols-1 md:grid-cols-2 gap-4">
               <div className="rounded-2xl border border-gray-200 bg-white p-5">
                 <div className="flex items-center gap-2 mb-2">
                   <Lock className="h-5 w-5 text-primary-700" />
@@ -478,16 +489,6 @@ export default function Page() {
                 </div>
               </div>
 
-              <div className="rounded-2xl border border-primary-200 bg-primary-50 p-5">
-                <div className="flex items-center gap-2 mb-2">
-                  <Sparkles className="h-5 w-5 text-primary-800" />
-                  <div className="font-semibold text-gray-900">GeKI KI‑Backend</div>
-                </div>
-                <div className="text-sm text-gray-700">
-                  Orchestriert Chat & VOICE‑KI, Kontext, Berechtigungen, Qualität und Übergaben.
-                </div>
-              </div>
-
               <div className="rounded-2xl border border-gray-200 bg-white p-5">
                 <div className="flex items-center gap-2 mb-2">
                   <Workflow className="h-5 w-5 text-primary-700" />
@@ -495,22 +496,21 @@ export default function Page() {
                 </div>
                 <div className="text-sm text-gray-700">Prompting, Rollen/Berechtigungen, Qualitätssicherung.</div>
               </div>
-            </div>
 
-            <div className="mt-4 grid grid-cols-1 lg:grid-cols-2 gap-4">
+              <div className="rounded-2xl border border-gray-200 bg-white p-5">
+                <div className="flex items-center gap-2 mb-2">
+                  <Sparkles className="h-5 w-5 text-primary-700" />
+                  <div className="font-semibold text-gray-900">Unternehmens-/Gemeindedaten (Web)</div>
+                </div>
+                <div className="text-sm text-gray-700">Website‑Inhalte, Leistungsbeschreibungen, FAQ, Formulare.</div>
+              </div>
+
               <div className="rounded-2xl border border-gray-200 bg-white p-5">
                 <div className="flex items-center gap-2 mb-2">
                   <Database className="h-5 w-5 text-primary-700" />
-                  <div className="font-semibold text-gray-900">Unternehmens-/Gemeindedaten</div>
+                  <div className="font-semibold text-gray-900">Unternehmens-/Gemeindedaten (Intern)</div>
                 </div>
-                <div className="text-sm text-gray-700">Website, Intranet, SharePoint, Dokumente, Formulare, Prozesse.</div>
-              </div>
-              <div className="rounded-2xl border border-gray-200 bg-white p-5">
-                <div className="flex items-center gap-2 mb-2">
-                  <Layers className="h-5 w-5 text-primary-700" />
-                  <div className="font-semibold text-gray-900">Externe Quellen (optional)</div>
-                </div>
-                <div className="text-sm text-gray-700">Gezielt, nachvollziehbar und kontrolliert angebunden.</div>
+                <div className="text-sm text-gray-700">Intranet/SharePoint, Dokumente, Prozesse, Wissensbasen.</div>
               </div>
             </div>
           </div>
