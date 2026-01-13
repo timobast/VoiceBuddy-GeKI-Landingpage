@@ -162,6 +162,9 @@ export default function Page() {
                 <Pill>Private KI</Pill>
                 <Pill>DSGVO & nDSG</Pill>
               </div>
+              <div className="text-sm font-semibold text-primary-800 mb-2">
+                Die GeKI‑Landingpage: Chat‑ & VOICE‑KI für Kommunen im DACH‑Raum.
+              </div>
               <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
                 Bürgeranliegen schneller lösen – ohne zusätzliche Parallelstrukturen
           </h1>
@@ -185,6 +188,10 @@ export default function Page() {
               </div>
 
               <div className="flex flex-col sm:flex-row gap-4">
+                <Button href="tel:+4960237043102" variant="secondary" className="inline-flex items-center">
+                  Testanruf: +49 6023 7043102
+                  <Phone className="ml-2 h-5 w-5" />
+                </Button>
                 <Button href="#kontakt" variant="primary" className="inline-flex items-center">
                   Gespräch anfragen
                   <ArrowRight className="ml-2 h-5 w-5" />
@@ -672,6 +679,10 @@ export default function Page() {
             Chat & VOICE‑KI datenschutzkonform eingeführt werden.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Button href="tel:+4960237043102" variant="secondary" className="inline-flex items-center justify-center">
+              Testanruf: +49 6023 7043102
+              <Phone className="ml-2 h-5 w-5" />
+            </Button>
             <Button href="mailto:timo.bast@ai-buddy.net?subject=GeKI%20Landingpage%20%E2%80%93%20Kontakt" variant="primary" className="inline-flex items-center">
               Kontakt aufnehmen
               <ArrowRight className="ml-2 h-5 w-5" />
