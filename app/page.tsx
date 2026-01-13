@@ -26,6 +26,7 @@ type Benefit = {
 type UseCase = {
   title: string;
   tag: string;
+  description: string;
 };
 
 const benefits: Benefit[] = [
@@ -67,18 +68,66 @@ const benefits: Benefit[] = [
 ];
 
 const useCases: UseCase[] = [
-  { title: "Interaktive Abfallberatung & Aufklärung", tag: "Bürgerservice" },
-  { title: "Digitale Umzugsberatung", tag: "Bürgerservice" },
-  { title: "Info‑Chat zu sozialen Angeboten & Vermittlung", tag: "Soziales" },
-  { title: "Hilfestellung bei Schulden / Ratenvereinbarung", tag: "Soziales" },
-  { title: "Telefonunterstützung (VOICE‑KI)", tag: "Telefon" },
-  { title: "ID/Pass – Auskünfte & Terminvorbereitung", tag: "Bürgerservice" },
-  { title: "Baubewilligung / Bauen & Wohnen", tag: "Bauen" },
-  { title: "Bildung (Schule)", tag: "Bildung" },
-  { title: "Todesfallmeldung & Organisation", tag: "Bürgerservice" },
-  { title: "Dateisuchmanager (Intranet/SharePoint)", tag: "Verwaltung" },
-  { title: "Einbürgerung", tag: "Integration" },
-  { title: "Integration in bestehende Systeme", tag: "IT" },
+  { 
+    title: "Interaktive Abfallberatung & Aufklärung", 
+    tag: "Bürgerservice",
+    description: "GeKI beantwortet Fragen zu Müllsortierung, Entsorgungsterminen und Sondermüll automatisch – auf Ihrer Website oder per Telefon. Reduziert Rückfragen an die Verwaltung erheblich und macht Abfallwirtschaft für Bürger:innen verständlich."
+  },
+  { 
+    title: "Digitale Umzugsberatung", 
+    tag: "Bürgerservice",
+    description: "Führt Bürger:innen durch den Umzugsprozess: Welche Ummeldungen nötig sind, welche Dokumente gebraucht werden und wo Termine vereinbart werden können. Spart Zeit bei Standardanfragen und bereitet komplexe Fälle optimal vor."
+  },
+  { 
+    title: "Info‑Chat zu sozialen Angeboten & Vermittlung", 
+    tag: "Soziales",
+    description: "Informiert niederschwellig über Hilfsangebote, Beratungsstellen und finanzielle Unterstützung. GeKI leitet bei Bedarf an die richtige Stelle weiter – barrierefrei, mehrsprachig und anonym nutzbar."
+  },
+  { 
+    title: "Hilfestellung bei Schulden / Ratenvereinbarung", 
+    tag: "Soziales",
+    description: "Beantwortet erste Fragen zu Zahlungsplänen, Stundungen oder Beratungsangeboten. Qualifiziert Anliegen vor und leitet sensible Fälle an Fachberatung weiter – diskret und datenschutzkonform."
+  },
+  { 
+    title: "Telefonunterstützung (VOICE‑KI)", 
+    tag: "Telefon",
+    description: "VOICE-KI nimmt Anrufe entgegen, beantwortet häufige Fragen oder leitet gezielt an den zuständigen Fachbereich weiter. Mit Gesprächszusammenfassung für Mitarbeitende – damit jeder Anruf vorbereitet ist und weniger Zeit in Warteschleifen verloren geht."
+  },
+  { 
+    title: "ID/Pass – Auskünfte & Terminvorbereitung", 
+    tag: "Bürgerservice",
+    description: "Beantwortet Fragen zu Personalausweisen, Reisepässen und benötigten Unterlagen. GeKI bereitet Termine vor, indem es prüft, ob alle Dokumente vorliegen – und spart so Zeit am Schalter."
+  },
+  { 
+    title: "Baubewilligung / Bauen & Wohnen", 
+    tag: "Bauen",
+    description: "Erklärt Bauvorschriften, Genehmigungsprozesse und erforderliche Anträge. GeKI führt durch den Antragsprozess und leitet komplexe bauliche Anfragen an die Bauabteilung weiter – mit allen relevanten Vorabinfos."
+  },
+  { 
+    title: "Bildung (Schule)", 
+    tag: "Bildung",
+    description: "Beantwortet Eltern-Fragen zu Schulanmeldung, Ferienzeiten, Betreuungsangeboten oder Schulmaterialien. Entlastet Schulsekretariate und macht Informationen rund um die Uhr verfügbar."
+  },
+  { 
+    title: "Todesfallmeldung & Organisation", 
+    tag: "Bürgerservice",
+    description: "Unterstützt Angehörige in einer sensiblen Situation: Erklärt notwendige Schritte, erforderliche Dokumente und leitet bei Bedarf an Bestattungsamt oder Beratung weiter. Empathisch formuliert und diskret."
+  },
+  { 
+    title: "Dateisuchmanager (Intranet/SharePoint)", 
+    tag: "Verwaltung",
+    description: "Durchsucht Ihr Intranet, SharePoint oder Dokumentenarchive für Mitarbeitende blitzschnell. Findet Formulare, Vorlagen, interne Richtlinien oder Protokolle – spart Suchzeit und reduziert Rückfragen an Kolleg:innen."
+  },
+  { 
+    title: "Einbürgerung", 
+    tag: "Integration",
+    description: "Informiert über Voraussetzungen, Antragsprozess und benötigte Unterlagen für die Einbürgerung. Mehrsprachig verfügbar und mit klarer Wegweisung – damit Interessierte den Prozess gut vorbereitet starten können."
+  },
+  { 
+    title: "Integration in bestehende Systeme", 
+    tag: "IT",
+    description: "GeKI lässt sich in Ihre vorhandene IT-Infrastruktur integrieren: Website, Telefonie, MS Teams, SharePoint oder Fachverfahren. Keine Parallelstrukturen – GeKI arbeitet mit Ihren bestehenden Systemen zusammen."
+  },
 ];
 
 const rolloutSteps = [
@@ -543,14 +592,20 @@ export default function Page() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
             {useCases.map((u, idx) => (
-              <div key={u.title} className="rounded-2xl border border-gray-200 bg-gray-50 p-5">
+              <div key={u.title} className="group rounded-2xl border border-gray-200 bg-gray-50 p-5 hover:bg-white hover:shadow-md transition-all duration-200 cursor-pointer relative">
                 <div className="flex items-center justify-between mb-3">
                   <span className="text-xs font-semibold text-primary-800 bg-primary-50 border border-primary-100 rounded-full px-3 py-1">
                     {u.tag}
                   </span>
                   <span className="text-xs font-semibold text-gray-500">{String(idx + 1).padStart(2, "0")}</span>
                 </div>
-                <div className="font-semibold text-gray-900">{u.title}</div>
+                <div className="font-semibold text-gray-900 mb-2">{u.title}</div>
+                
+                {/* Tooltip on hover */}
+                <div className="hidden group-hover:block absolute z-10 left-0 right-0 top-full mt-2 p-4 bg-white border border-gray-200 rounded-xl shadow-lg text-sm text-gray-700">
+                  {u.description}
+                  <div className="absolute -top-2 left-6 w-4 h-4 bg-white border-l border-t border-gray-200 transform rotate-45"></div>
+                </div>
               </div>
             ))}
           </div>
