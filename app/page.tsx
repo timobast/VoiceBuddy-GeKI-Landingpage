@@ -384,6 +384,28 @@ export default function Page() {
               <div className="mt-5 rounded-xl border border-yellow-200 bg-yellow-50 p-4 text-sm text-gray-700">
                 <strong>Wichtig:</strong> Für rechtlich verbindliche Auskünfte bleibt die zuständige Stelle verantwortlich.
               </div>
+
+              <div className="mt-5 rounded-xl border border-primary-200 bg-white p-4">
+                <div className="flex items-start justify-between gap-4">
+                  <div>
+                    <div className="text-sm font-semibold text-gray-900">Testanruf starten</div>
+                    <div className="text-sm text-gray-700 mt-1">
+                      Rufen Sie die VOICE‑KI an und testen Sie den Bürgerservice‑Dialog live:
+                    </div>
+                    <div className="mt-2 font-bold text-primary-800">+49 6023 7043102</div>
+                  </div>
+                  <div className="shrink-0">
+                    <Button
+                      href="tel:+4960237043102"
+                      variant="primary"
+                      className="inline-flex items-center"
+                    >
+                      Jetzt anrufen
+                      <Phone className="ml-2 h-5 w-5" />
+                    </Button>
+                  </div>
+                </div>
+              </div>
             </div>
 
             <div className="rounded-2xl border border-gray-200 bg-gray-50 p-6">
