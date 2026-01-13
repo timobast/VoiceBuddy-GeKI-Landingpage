@@ -3,7 +3,7 @@ import aiBuddyLogo from "./AI-Buddy Logo.png";
 import "./globals.css";
 
 export const metadata = {
-  title: "GeKI – Gemeinde-KI (Chat & VOICE)",
+  title: "hallo-rathaus - GeKI - Ihr kommunaler KI Assistent.",
   description:
     "GeKI ist eine private KI-Assistenz für Kommunen: Chat & VOICE-KI für den Bürgerservice im DACH-Raum.",
 };
