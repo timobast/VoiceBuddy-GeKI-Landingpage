@@ -26,8 +26,8 @@ export default function ImpressumPage() {
                 <strong>Telefon:</strong> +49 (0) 6023 9521127
                 <br />
                 <strong>E-Mail:</strong>{" "}
-                <a className="text-primary-700 underline" href="mailto:info@designerscapitol.net">
-                  info@designerscapitol.net
+                <a className="text-primary-700 underline" href="mailto:info@ai-buddy.net">
+                  info@ai-buddy.net
                 </a>
                 <br />
                 <strong>Website:</strong>{" "}

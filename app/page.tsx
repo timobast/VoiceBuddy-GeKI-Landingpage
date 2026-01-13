@@ -548,7 +548,7 @@ export default function Page() {
               Datenschutz & Kontrolle – 100% souverän.
             </h2>
             <div className="mt-6">
-              <Button href="mailto:info@designerscapitol.net" variant="primary" className="bg-gray-900 hover:bg-black">
+              <Button href="mailto:timo.bast@ai-buddy.net?subject=GeKI%20Landingpage%20%E2%80%93%20kostenlos%20testen" variant="primary" className="bg-gray-900 hover:bg-black">
                 Jetzt kostenlos testen
               </Button>
             </div>
@@ -650,7 +650,7 @@ export default function Page() {
             Chat & VOICE‑KI datenschutzkonform eingeführt werden.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button href="mailto:info@designerscapitol.net" variant="primary" className="inline-flex items-center">
+            <Button href="mailto:timo.bast@ai-buddy.net?subject=GeKI%20Landingpage%20%E2%80%93%20Kontakt" variant="primary" className="inline-flex items-center">
               Kontakt aufnehmen
               <ArrowRight className="ml-2 h-5 w-5" />
             </Button>

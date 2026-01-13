@@ -1,3 +1,4 @@
+import Image from "next/image";
 import "./globals.css";
 
 export const metadata = {
@@ -19,10 +20,17 @@ export default function RootLayout({
             <div className="container-custom py-4 flex items-center justify-between">
               <a
                 href="https://www.ai-buddy.net"
-                className="font-bold text-gray-900"
+                className="flex items-center gap-3"
                 rel="noopener noreferrer"
               >
-                AI-Buddy
+                <Image
+                  src="/ai-buddy-logo.png"
+                  alt="AI-Buddy"
+                  width={163}
+                  height={70}
+                  priority
+                  className="h-8 w-auto"
+                />
               </a>
               <a
                 href="https://www.ai-buddy.net"
@@ -51,8 +59,8 @@ export default function RootLayout({
                 <div className="text-sm">
                   <div className="text-white font-semibold mb-3">Kontakt</div>
                   <div className="text-gray-400 space-y-2">
-                    <a className="hover:text-white transition-colors block" href="mailto:info@designerscapitol.net">
-                      info@designerscapitol.net
+                    <a className="hover:text-white transition-colors block" href="mailto:info@ai-buddy.net">
+                      info@ai-buddy.net
                     </a>
                     <a className="hover:text-white transition-colors block" href="tel:+4960239521127">
                       +49 (0) 6023 9521127
@@ -69,7 +77,7 @@ export default function RootLayout({
                     <a className="hover:text-white transition-colors block" href="/impressum">
                       Impressum
                     </a>
-                    <a className="hover:text-white transition-colors block" href="https://www.ai-buddy.net/privacy" rel="noopener noreferrer">
+                    <a className="hover:text-white transition-colors block" href="/datenschutz">
                       Datenschutz
                     </a>
                   </div>
