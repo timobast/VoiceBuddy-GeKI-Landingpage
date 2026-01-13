@@ -18,7 +18,7 @@ export default function RootLayout({
       <body className="antialiased">
         <div className="min-h-screen bg-gray-50">
           <header className="bg-white border-b border-gray-200">
-            <div className="container-custom py-2 flex items-center justify-between">
+            <div className="container-custom py-0.5 flex items-center justify-between">
               <a
                 href="https://www.ai-buddy.net"
                 className="flex items-center gap-3"
@@ -28,7 +28,7 @@ export default function RootLayout({
                   src={aiBuddyLogo}
                   alt="AI-Buddy"
                   priority
-                  className="h-20 sm:h-24 md:h-28 lg:h-32 w-auto object-contain"
+                  className="h-24 sm:h-28 md:h-32 lg:h-36 xl:h-40 w-auto object-contain"
                 />
               </a>
               <a
