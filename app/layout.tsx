@@ -1,4 +1,5 @@
 import Image from "next/image";
+import aiBuddyLogo from "./AI-Buddy Logo.png";
 import "./globals.css";
 
 export const metadata = {
@@ -24,10 +25,8 @@ export default function RootLayout({
                 rel="noopener noreferrer"
               >
                 <Image
-                  src="/ai-buddy-logo.png"
+                  src={aiBuddyLogo}
                   alt="AI-Buddy"
-                  width={163}
-                  height={70}
                   priority
                   className="h-10 md:h-12 w-auto"
                 />
