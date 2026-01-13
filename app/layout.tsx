@@ -35,7 +35,7 @@ export default function RootLayout({
                     style={{ 
                       objectFit: 'cover',
                       objectPosition: '50% 50%',
-                      transform: 'scale(1.2)',
+                      transform: 'scale(1.4)',
                     }}
                   />
                 </div>
