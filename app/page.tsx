@@ -186,7 +186,7 @@ export default function Page() {
                 ))}
               </div>
 
-              <div className="flex flex-col sm:flex-row gap-4">
+              <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Button href="tel:+4960237043102" variant="secondary" className="inline-flex items-center">
                   Testanruf: +49 6023 7043102
                   <Phone className="ml-2 h-5 w-5" />
