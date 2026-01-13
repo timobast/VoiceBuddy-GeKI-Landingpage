@@ -646,8 +646,8 @@ export default function Page() {
             <div className="my-6 h-px bg-gray-200" />
 
             {/* GeKI Backend (full width) */}
-            <div className="rounded-2xl border border-primary-200 bg-primary-50 p-5">
-              <div className="flex items-center gap-2 mb-2">
+            <div className="rounded-2xl border border-primary-200 bg-primary-50 p-5 text-center">
+              <div className="flex items-center gap-2 mb-2 justify-center">
                 <Sparkles className="h-5 w-5 text-primary-800" />
                 <div className="font-semibold text-gray-900">GeKI KI‑Backend</div>
               </div>
