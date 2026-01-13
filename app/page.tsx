@@ -602,9 +602,9 @@ export default function Page() {
                 <div className="font-semibold text-gray-900 mb-2">{u.title}</div>
                 
                 {/* Tooltip on hover */}
-                <div className="hidden group-hover:block absolute z-10 left-0 right-0 top-full mt-2 p-4 bg-white border border-gray-200 rounded-xl shadow-lg text-sm text-gray-700">
+                <div className="hidden group-hover:block absolute z-10 left-0 right-0 top-full mt-2 p-4 bg-primary-600 text-white border-2 border-primary-700 rounded-xl shadow-2xl text-sm">
                   {u.description}
-                  <div className="absolute -top-2 left-6 w-4 h-4 bg-white border-l border-t border-gray-200 transform rotate-45"></div>
+                  <div className="absolute -top-2 left-6 w-4 h-4 bg-primary-600 border-l-2 border-t-2 border-primary-700 transform rotate-45"></div>
                 </div>
               </div>
             ))}
