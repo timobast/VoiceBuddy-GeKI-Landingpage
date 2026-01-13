@@ -1,4 +1,3 @@
-import SectionHeader from "@/components/ui/SectionHeader";
 import Button from "@/components/ui/Button";
 import {
   ArrowRight,
@@ -144,11 +143,6 @@ export default function Page() {
   return (
     <div className="py-12">
       <div className="container-custom">
-        <SectionHeader
-          title="Gemeinde-KI (GeKI)"
-          subtitle="Private KI‑Assistenz für Kommunen – Chat & VOICE‑KI für den Bürgerservice im DACH‑Raum"
-        />
-
         {/* Hero */}
         <section className="relative overflow-hidden rounded-2xl border border-gray-200 bg-gradient-to-br from-primary-50 via-white to-secondary-50 p-8 mb-12">
           <div className="absolute -top-16 -right-16 h-56 w-56 rounded-full bg-primary-200/40 blur-2xl" />
@@ -156,23 +150,23 @@ export default function Page() {
 
           <div className="relative grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
             <div>
-              <div className="flex flex-wrap gap-2 mb-4">
-                <Pill>24/7 erreichbar</Pill>
-                <Pill>Mehrsprachig</Pill>
-                <Pill>Private KI</Pill>
-                <Pill>DSGVO & nDSG</Pill>
-              </div>
               <div className="mb-2">
-                <div className="text-sm font-semibold text-primary-900">
-                  GeKI - Ihr kommunaler KI-Assistent.
+                <div className="text-3xl md:text-4xl font-bold text-gray-900 leading-tight">
+                  GeKI - Ihr kommunaler KI Assistent.
                 </div>
-                <div className="text-xs font-semibold tracking-wide uppercase text-primary-700">
+                <div className="text-xs font-semibold tracking-wide uppercase text-primary-700 mt-2">
                   powered by AI-BUDDY
                 </div>
               </div>
-              <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-                Bürgeranliegen schneller lösen – ohne zusätzliche Parallelstrukturen
-          </h1>
+
+              <div className="flex flex-wrap gap-2 mt-4 mb-4">
+                <Pill>24/7 erreichbar</Pill>
+                <Pill>Mehrsprachig</Pill>
+                <Pill>Chat + Voice</Pill>
+                <Pill>Private KI</Pill>
+                <Pill>DSGVO & nDSG</Pill>
+              </div>
+
               <p className="text-lg text-gray-700 mb-6">
                 GeKI verbindet Website‑Wissen, Dokumente und Prozesse zu einem digitalen Assistenten.
                 <strong> Als Chat</strong> und als <strong>VOICE‑KI für den Telefonkanal</strong>.

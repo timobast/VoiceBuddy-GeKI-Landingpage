@@ -28,7 +28,7 @@ export default function RootLayout({
                   src={aiBuddyLogo}
                   alt="AI-Buddy"
                   priority
-                  className="h-10 md:h-12 w-auto"
+                  className="h-16 sm:h-20 md:h-24 lg:h-28 w-auto object-contain"
                 />
               </a>
               <a
