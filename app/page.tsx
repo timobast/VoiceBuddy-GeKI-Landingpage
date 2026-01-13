@@ -106,28 +106,28 @@ const rolloutSteps = [
 
 const faqs = [
   {
-    q: "Was sind die Herausforderungen bei KI?",
-    a: "Rechtslage und Datenschutz sind komplex, die Auswahl an Tools riesig. Mitarbeitende brauchen Klarheit und Sicherheit im Umgang mit KI.",
+    q: "Welche konkreten Vorteile bringt GeKI unserer Kommune?",
+    a: "GeKI entlastet Ihre Mitarbeitenden spürbar: Weniger repetitive Anfragen, 24/7-Erreichbarkeit für Bürger:innen, schnellere Antwortzeiten und mehrsprachiger Service. Sie gewinnen Zeit für komplexe Fälle und persönliche Beratung – bei gleichzeitig höherer Servicequalität.",
   },
   {
-    q: "Wie schnell kann ich starten?",
-    a: "Nach Analyse und Workshop sind erste KI‑Module direkt einsatzbereit – wir begleiten die Integration Schritt für Schritt.",
+    q: "Ist GeKI DSGVO-konform und sicher?",
+    a: "Absolut. GeKI ist eine private KI-Lösung: Ihre Daten bleiben in Ihrer Kontrolle, werden nicht an öffentliche KI-Systeme weitergegeben und können in Ihrem eigenen Rechenzentrum betrieben werden. Wir begleiten Sie durch die Datenschutz-Folgenabschätzung (DSGVO/nDSG) und implementieren Rollen, Berechtigungen sowie ein vollständiges Löschkonzept.",
   },
   {
-    q: "Wo starte ich am besten?",
-    a: "Mit einer Prozessanalyse: Wir prüfen Potenziale, rechtliche Anforderungen und entwickeln im Workshop konkrete Empfehlungen.",
+    q: "Wie einfach ist die Implementierung?",
+    a: "Einfacher als gedacht: In nur 4 Schritten von der Analyse zum produktiven Einsatz. Wir analysieren gemeinsam Ihre Prozesse, entwickeln im Workshop die optimale Strategie, setzen die KI-Module um und begleiten Sie beim Go-Live. Sie starten risikolos – ohne große IT-Projekte oder teure Infrastruktur.",
   },
   {
-    q: "Was passiert mit meinen Daten?",
-    a: "Ihre Daten bleiben geschützt und privat. Sensible Infos werden nicht in öffentliche KI‑Systeme eingespeist.",
+    q: "Was unterscheidet GeKI von ChatGPT & Co.?",
+    a: "GeKI ist speziell für kommunale Anforderungen entwickelt: Private KI statt öffentlicher Cloud, kein Training mit Ihren Daten, direkte Anbindung an Ihre Systeme (Website, Intranet, SharePoint, Telefonie) und optimiert für deutsche Verwaltungssprache. Sie bleiben unabhängig und behalten die volle Kontrolle.",
   },
   {
-    q: "Bekommen Mitarbeitende Schulungen?",
-    a: "Ja – praxisnahe Trainings, damit Ihr Team sicher mit KI arbeitet und die Lösungen optimal nutzt.",
+    q: "Wie schnell sehen wir erste Erfolge?",
+    a: "Bereits nach 4-6 Wochen können erste KI-Module produktiv laufen. Wir starten mit einem Pilot-Usecase (z.B. Abfallberatung, FAQ-Assistent oder Telefon-Vorqualifizierung), messen die Entlastung und erweitern dann schrittweise. So minimieren Sie Risiken und maximieren den Nutzen.",
   },
   {
-    q: "Wie kann KI in einer Gemeinde genutzt werden?",
-    a: "Von Telefonumfragen über Wissensdatenbanken bis zur Rechnungsverbuchung oder Onboarding – vielseitig, aber nur sinnvoll mit klarer Strategie.",
+    q: "Brauchen unsere Mitarbeitenden spezielle IT-Kenntnisse?",
+    a: "Nein. GeKI ist so intuitiv wie ein Chat-Tool. Ihre Mitarbeitenden nutzen es über bekannte Kanäle (Web, Teams, Telefon) – ohne neue Software lernen zu müssen. Wir bieten praxisnahe Schulungen und kontinuierlichen Support, damit Ihr Team von Anfang an sicher arbeitet.",
   },
 ];
 
@@ -651,9 +651,11 @@ export default function Page() {
 
         {/* FAQ (native accordion) */}
         <section className="bg-white rounded-2xl shadow-sm border border-gray-200 p-8 mb-12">
-          <div className="flex items-center mb-6">
-            <BookOpen className="h-8 w-8 text-primary-700 mr-3" />
-            <h2 className="text-2xl font-bold text-gray-900">Häufige Fragen</h2>
+          <div className="mb-8 text-center">
+            <div className="text-sm font-semibold text-primary-700 mb-2">Ihre Fragen – unsere Antworten.</div>
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900">
+              Vorteile, Sicherheit & Einfachheit
+            </h2>
           </div>
 
           <div className="space-y-3">
