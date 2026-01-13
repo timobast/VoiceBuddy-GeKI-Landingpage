@@ -229,7 +229,9 @@ export default function Page() {
                   "Kontrollierte Datenquellen & klare Berechtigungen",
                 ].map((t) => (
                   <div key={t} className="flex items-start gap-2">
-                    <CheckCircle2 className="h-5 w-5 text-primary-700 mt-0.5 flex-shrink-0" />
+                    <div className="flex-shrink-0">
+                      <CheckCircle2 className="h-5 w-5 text-primary-700" />
+                    </div>
                     <span className="text-base">{t}</span>
                   </div>
                 ))}
