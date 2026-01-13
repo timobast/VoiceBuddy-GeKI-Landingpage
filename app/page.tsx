@@ -159,7 +159,7 @@ export default function Page() {
                 </div>
               </div>
 
-              <div className="flex flex-wrap gap-2 mt-4 mb-4">
+              <div className="flex flex-wrap gap-2 mt-4 mb-4 justify-center">
                 <Pill>24/7 erreichbar</Pill>
                 <Pill>Mehrsprachig</Pill>
                 <Pill>Chat + Voice</Pill>
