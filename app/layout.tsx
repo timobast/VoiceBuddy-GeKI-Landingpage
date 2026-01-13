@@ -21,15 +21,22 @@ export default function RootLayout({
             <div className="container-custom py-0.5 flex items-center justify-between">
               <a
                 href="https://www.ai-buddy.net"
-                className="flex items-center gap-3"
+                className="flex items-center gap-3 overflow-hidden"
                 rel="noopener noreferrer"
               >
-                <Image
-                  src={aiBuddyLogo}
-                  alt="AI-Buddy"
-                  priority
-                  className="h-24 sm:h-28 md:h-32 lg:h-36 xl:h-40 w-auto object-contain"
-                />
+                <div className="relative h-12 sm:h-14 md:h-16 lg:h-18 xl:h-20 w-auto overflow-hidden">
+                  <Image
+                    src={aiBuddyLogo}
+                    alt="AI-Buddy"
+                    priority
+                    className="h-24 sm:h-28 md:h-32 lg:h-36 xl:h-40 w-auto object-contain"
+                    style={{ 
+                      objectPosition: 'center center',
+                      transform: 'scale(2)',
+                      transformOrigin: 'center center'
+                    }}
+                  />
+                </div>
               </a>
               <a
                 href="https://www.ai-buddy.net"
